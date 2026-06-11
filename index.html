@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lafia Tambila</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #0b0f1a;
+      --surface: #111827;
+      --border: #1e2a3a;
+      --text: #f0f4ff;
+      --muted: #6b7a99;
+      --accent: #4f7df3;
+      --accent-light: #93b4ff;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 1rem;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--accent-light);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── Layout ── */
+    header, main, footer {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ── Hero ── */
+    header {
+      padding-top: 5rem;
+      padding-bottom: 3.5rem;
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      line-height: 1.1;
+      margin-bottom: 0.6rem;
+    }
+
+    .hero-bio {
+      font-size: 1.05rem;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-meta {
+      color: var(--muted);
+      font-size: 0.9rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .hero-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.875rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 9999px;
+      padding: 0.3rem 0.9rem;
+      color: var(--accent-light);
+      transition: border-color 0.15s;
+    }
+
+    .hero-links a:hover {
+      border-color: var(--accent-light);
+      text-decoration: none;
+    }
+
+    /* ── Sections ── */
+    section {
+      padding: 2.5rem 0;
+      border-top: 1px solid var(--border);
+    }
+
+    section h2 {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+    }
+
+    /* ── Skills ── */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      list-style: none;
+    }
+
+    .skill {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 9999px;
+      padding: 0.28rem 0.85rem;
+      font-size: 0.845rem;
+      color: var(--text);
+    }
+
+    /* ── Cards (projects + experience) ── */
+    .card-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      list-style: none;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      padding: 1.2rem 1.4rem;
+    }
+
+    .card h3 {
+      font-size: 0.975rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.875rem;
+      line-height: 1.55;
+    }
+
+    .card-meta {
+      display: inline-block;
+      font-size: 0.75rem;
+      color: var(--accent-light);
+      margin-bottom: 0.3rem;
+      font-weight: 500;
+    }
+
+    /* ── Footer ── */
+    footer {
+      padding-top: 2.5rem;
+      padding-bottom: 3.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lafia Tambila</h1>
+    <p class="hero-bio">High school senior, Code2College scholar, and Applied AI Cohort participant seeking a Summer 2026 tech internship.</p>
+    <div class="hero-meta">
+      <span>Austin, TX</span>
+      <a href="mailto:lmjtambila@gmail.com">lmjtambila@gmail.com</a>
+    </div>
+    <nav class="hero-links" aria-label="Profile links">
+      <a href="https://github.com/lafiatambila22-ui" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/lafia-tambila" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <ul class="skills" role="list">
+        <li class="skill">Python</li>
+        <li class="skill">Java</li>
+        <li class="skill">SQL</li>
+        <li class="skill">HTML / CSS</li>
+        <li class="skill">JavaScript</li>
+        <li class="skill">React</li>
+        <li class="skill">Flask</li>
+        <li class="skill">Git</li>
+        <li class="skill">Claude Code</li>
+        <li class="skill">Raspberry Pi</li>
+        <li class="skill">MySQL</li>
+        <li class="skill">Pandas</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <ul class="card-list">
+        <li class="card">
+          <h3>Sandbox Notes App</h3>
+          <p>A Flask note-taking app built during the Code2College Applied AI Cohort with search, tags, and validation features.</p>
+        </li>
+        <li class="card">
+          <h3>Embedded Dashboard</h3>
+          <p>A Raspberry Pi dashboard using Qt to control LEDs and hardware components in real time.</p>
+        </li>
+        <li class="card">
+          <h3>2D Platformer Game</h3>
+          <p>Built with Pygame including player movement, enemy AI, physics, and tile-map level design.</p>
+        </li>
+        <li class="card">
+          <h3>E-commerce Website</h3>
+          <p>Full storefront built with HTML, CSS, JavaScript, and React.</p>
+        </li>
+        <li class="card">
+          <h3>Restaurant Chatbot</h3>
+          <p>A Python chatbot that simulates ordering from a restaurant menu.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Experience</h2>
+      <ul class="card-list">
+        <li class="card">
+          <span class="card-meta">Code2College &mdash; Scholar since 2022</span>
+          <p>Completed multiple technical programs across software development, AI, and engineering tracks.</p>
+        </li>
+        <li class="card">
+          <span class="card-meta">AI Fellow &mdash; Summer 2024</span>
+          <p>Built generative AI solutions using Flask, GitHub, and large language models.</p>
+        </li>
+        <li class="card">
+          <span class="card-meta">Drone Club &mdash; Coding Lead</span>
+          <p>Designed autonomous flight code; team placed in the top runners-up at the state competition, Spring 2025.</p>
+        </li>
+        <li class="card">
+          <span class="card-meta">Science Olympiad &mdash; Co-President, 5 years</span>
+          <p>Led the team to 2nd place in the bridge event at the 2023 state competition.</p>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Lafia Tambila &middot; Austin, TX &middot; <a href="mailto:lmjtambila@gmail.com">lmjtambila@gmail.com</a></p>
+  </footer>
+
+</body>
+</html>
